@@ -3,7 +3,7 @@
   "id" : "f29d4db6-5588-4caf-b8ec-45edb2e4b0b9",
   "name" : "exampleInstExec",
   "type" : "page",
-  "lastUpdate" : 1517392375787,
+  "lastUpdate" : 1517415774203,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -159,7 +159,7 @@
       },
       "value" : {
         "type" : "variable",
-        "value" : "temp.user.username"
+        "value" : "temp.user.name"
       },
       "type" : {
         "type" : "constant",
