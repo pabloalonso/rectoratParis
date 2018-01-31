@@ -1,0 +1,25 @@
+.document-iframe {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.FileViewer-img {
+  padding-top: 10px;
+}
+
+.FileViewer-fileName {
+  min-width: 50px;
+  display: inline-block;
+  width: 100%;
+  padding-top: 7px;
+  margin-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.FileViewer-previewNotAvailable {
+  margin-left: 15px;
+  color: #AAA;
+}

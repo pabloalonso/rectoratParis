@@ -1,0 +1,342 @@
+{
+  "designerVersion" : "1.6.34",
+  "id" : "0e394d0f-eb96-4e1a-98c9-62b5c64c1de2",
+  "name" : "GestionDemande",
+  "type" : "page",
+  "lastUpdate" : 1517407910635,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Creacion nouvelle demande"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "process"
+      },
+      "targetUrl" : {
+        "type" : "constant",
+        "value" : "http://"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "constant",
+        "value" : "Gestion Demandes"
+      },
+      "processVersion" : {
+        "type" : "constant",
+        "value" : "1.4"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant"
+      },
+      "urlParams" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "primary"
+      }
+    },
+    "reference" : "e98151fc-e27a-4edc-9298-5b055c3af153",
+    "id" : "pbLink"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Mes demandes en cours"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 2"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "290724ea-3863-4fec-b5bf-8eddd76fe228",
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "CaseID", "Redacteur", "Type Demande", "Date Demande", "Nom Application" ]
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Variable"
+      },
+      "apiUrl" : {
+        "type" : "constant",
+        "value" : "../API/"
+      },
+      "params" : {
+        "type" : "constant"
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "mesDemandes"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "caseId", "redacteurNom", "typeDemande", "dateDemande", "nomApplication" ]
+      },
+      "sortColumns" : {
+        "type" : "constant"
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : "demande"
+      },
+      "pageSize" : {
+        "type" : "constant",
+        "value" : 10
+      },
+      "filter" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "632ef131-f42e-4afc-8fa4-289dcb65b525",
+    "id" : "pbDataTable"
+  }, {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "43d67b87-5ee3-4a17-b77d-b5187557020c",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "fragment",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        }
+      },
+      "reference" : "20e156d6-272c-478b-a2e1-b99b7914cc01",
+      "id" : "034e905c-c69b-49e7-a796-24852b519f06",
+      "binding" : {
+        "demande_bdm" : "demande"
+      }
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "removeItem" : {
+          "type" : "variable"
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbButton"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "warning"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Cancel"
+        },
+        "dataToSend" : {
+          "type" : "constant"
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "collectionPosition" : {
+          "type" : "constant"
+        },
+        "targetUrlOnSuccess" : {
+          "type" : "interpolation",
+          "value" : ""
+        },
+        "action" : {
+          "type" : "constant",
+          "value" : "DELETE"
+        },
+        "collectionToModify" : {
+          "type" : "variable"
+        },
+        "valueToAdd" : {
+          "type" : "expression"
+        },
+        "disabled" : {
+          "type" : "expression",
+          "value" : "$form.$invalid"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "url" : {
+          "type" : "interpolation",
+          "value" : "../API/extension/cancelDemande?caseId={{demande.caseId}}"
+        },
+        "dataFromSuccess" : {
+          "type" : "variable",
+          "value" : "response"
+        },
+        "dataFromError" : {
+          "type" : "variable",
+          "value" : "response"
+        }
+      },
+      "reference" : "34f81806-0a6f-4f6e-8c0a-3057c881307b",
+      "id" : "pbButton"
+    } ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "26161d84-81d7-4171-a784-e41feab4f04a",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "d51251c5-dbda-4b86-ad6f-b1439885b004",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "mesDemandes" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/fr.edu.paris.gdd.Demande?c=100&p=0&q=queryDemandesEnCours&f=redacteurId={{session.user_id}}",
+      "exposed" : false
+    },
+    "session" : {
+      "type" : "url",
+      "value" : "../API/system/session/1",
+      "exposed" : false
+    },
+    "demande" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    },
+    "response" : {
+      "type" : "constant",
+      "exposed" : false
+    }
+  }
+}

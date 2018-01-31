@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="rectorat_paris_clean">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="lcouthon">
+      <firstName>Leonie</firstName>
+      <lastName>Couthon</lastName>
+      <personalData/>
+      <professionalData/>
+      <metaDatas/>
+      <enabled>true</enabled>
+      <password encrypted="true">B0JRYAos+9M4F9RN2yBxdg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jbeaud-huy">
+      <firstName>Jocelyn</firstName>
+      <lastName>Beaud-Huy</lastName>
+      <personalData/>
+      <professionalData/>
+      <metaDatas/>
+      <enabled>true</enabled>
+      <password encrypted="true">LcTkpvvquKf4KO+prsfXrQ==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="nathalie">
+      <firstName>Nathalie</firstName>
+      <lastName>Lhardy</lastName>
+      <personalData/>
+      <professionalData/>
+      <metaDatas/>
+      <enabled>true</enabled>
+      <password encrypted="true">LcTkpvvquKf4KO+prsfXrQ==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="olivier">
+      <firstName>Olivier</firstName>
+      <lastName>Duru</lastName>
+      <personalData/>
+      <professionalData/>
+      <metaDatas/>
+      <enabled>true</enabled>
+      <password encrypted="true">08pd3mD4jbYGAh7rokmcAg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="cbourgeois1">
+      <firstName>Christophe</firstName>
+      <lastName>Bourgeois</lastName>
+      <personalData/>
+      <professionalData/>
+      <metaDatas/>
+      <enabled>true</enabled>
+      <password encrypted="true">RT5vhvWMNJag3n/3y6ozyw==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="admin">
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">admin</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="user"/>
+  </roles>
+  <groups>
+    <group name="Demandeur"/>
+    <group name="Direction"/>
+    <group name="DSI"/>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>nathalie</userName>
+      <roleName>user</roleName>
+      <groupName>DSI</groupName>
+      <assignedDate>1516971982131</assignedDate>
+    </membership>
+    <membership>
+      <userName>jbeaud-huy</userName>
+      <roleName>user</roleName>
+      <groupName>DSI</groupName>
+      <assignedDate>1516971982157</assignedDate>
+    </membership>
+    <membership>
+      <userName>jbeaud-huy</userName>
+      <roleName>user</roleName>
+      <groupName>Demandeur</groupName>
+      <assignedDate>1516971982197</assignedDate>
+    </membership>
+    <membership>
+      <userName>jbeaud-huy</userName>
+      <roleName>user</roleName>
+      <groupName>Direction</groupName>
+      <assignedDate>1516971982237</assignedDate>
+    </membership>
+    <membership>
+      <userName>olivier</userName>
+      <roleName>user</roleName>
+      <groupName>Demandeur</groupName>
+      <assignedDate>1517306764684</assignedDate>
+    </membership>
+    <membership>
+      <userName>cbourgeois1</userName>
+      <roleName>user</roleName>
+      <groupName>Demandeur</groupName>
+      <assignedDate>1517306764705</assignedDate>
+    </membership>
+    <membership>
+      <userName>lcouthon</userName>
+      <roleName>user</roleName>
+      <groupName>Direction</groupName>
+      <assignedDate>1517306764781</assignedDate>
+    </membership>
+    <membership>
+      <userName>admin</userName>
+      <roleName>user</roleName>
+      <groupName>DSI</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

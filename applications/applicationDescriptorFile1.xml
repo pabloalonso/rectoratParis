@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="gestion-demandes-dsi" version="1.0" profile="DSI" homePage="demandes" state="ACTIVATED" layout="custompage_defaultlayout" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Gestion Demandes</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_SuiviDemandes" token="demandes"/>
+            <applicationPage customPage="custompage_tasklist" token="tasklist"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="tasklist">
+                <displayName>Liste de taches</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+    <application token="gestion-demandes-direction" version="1.0" profile="Direction" homePage="demandes" state="ACTIVATED" layout="custompage_defaultlayout" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Gestion Demandes</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_SuiviDemandes" token="demandes"/>
+            <applicationPage customPage="custompage_tasklist" token="tasklist"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="tasklist">
+                <displayName>Liste de taches</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+    <application token="gestion-demandes" version="1.0" profile="Demandeur" homePage="dashboard" state="ACTIVATED" layout="custompage_defaultlayout" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Gestion Demandes</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_GestionDemande" token="dashboard"/>
+        </applicationPages>
+        <applicationMenus/>
+    </application>
+</applications>

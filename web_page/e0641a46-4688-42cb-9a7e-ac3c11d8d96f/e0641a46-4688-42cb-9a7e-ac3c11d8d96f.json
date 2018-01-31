@@ -1,0 +1,79 @@
+{
+  "designerVersion" : "1.6.34",
+  "id" : "e0641a46-4688-42cb-9a7e-ac3c11d8d96f",
+  "name" : "SuiviDemandes",
+  "type" : "page",
+  "lastUpdate" : 1517412662265,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "CaseID", "Statut", "Redacteur", "Type Demande", "Date Demande", "Nom Application" ]
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Bonita API"
+      },
+      "apiUrl" : {
+        "type" : "constant",
+        "value" : "../API/bdm/businessData/fr.edu.paris.gdd.Demande?c=100&p=0&q=find"
+      },
+      "params" : {
+        "type" : "constant"
+      },
+      "content" : {
+        "type" : "constant"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "caseId", "statutDemande", "redacteurNom", "typeDemande", "dateDemande", "nomApplication" ]
+      },
+      "sortColumns" : {
+        "type" : "constant"
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "pageSize" : {
+        "type" : "constant",
+        "value" : 10
+      },
+      "filter" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "b97898d1-ace1-4bc9-80c6-47a3588f8fab",
+    "id" : "pbDataTable"
+  } ] ],
+  "assets" : [ {
+    "id" : "a9561144-bbe1-40f9-aad8-f30e3f727d4f",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "73571464-25c3-41a6-add2-811051d0df1b",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : { }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profiles:profiles xmlns:profiles="http://www.bonitasoft.org/ns/profile/6.1">
+    <profile name="DSI" isDefault="false">
+        <profileEntries/>
+        <profileMapping>
+            <users/>
+            <groups>
+                <group>/DSI</group>
+            </groups>
+            <memberships/>
+            <roles/>
+        </profileMapping>
+    </profile>
+    <profile name="Direction" isDefault="false">
+        <profileEntries/>
+        <profileMapping>
+            <users/>
+            <groups>
+                <group>/Direction</group>
+            </groups>
+            <memberships/>
+            <roles/>
+        </profileMapping>
+    </profile>
+    <profile name="Demandeur" isDefault="false">
+        <profileEntries/>
+        <profileMapping>
+            <users/>
+            <groups>
+                <group>/Demandeur</group>
+            </groups>
+            <memberships/>
+            <roles/>
+        </profileMapping>
+    </profile>
+</profiles:profiles>
